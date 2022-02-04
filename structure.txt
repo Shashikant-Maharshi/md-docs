@@ -1,0 +1,23 @@
+<ErrorBoundary>
+  <Suspense>
+    {loggedIn
+      ? <LoggedInRoutes />
+      : <LoggedOutRoutes />}
+  <Suspense/>
+</ErrorBoundary>
+
+<LoggedInRoutes>
+  <Docs>
+    <DocsHeader />
+    <DocsContent>
+      <DocsList />
+      <DocViewer />
+    </Docscontent>
+  </Docs>
+</LoggedInRoutes>
+
+<LoggedOutRoutes>
+  <LandingPage />
+  <Registration />
+  <Login />
+</LoggedOutRoutes>

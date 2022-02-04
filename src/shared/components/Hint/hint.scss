@@ -1,0 +1,14 @@
+@import '../../styles/_main.scss';
+
+.hint {
+  margin: 0.5em 0;
+  font-size: 0.75em;
+
+  &.is-error {
+    color: $danger;
+  }
+
+  &.is-info {
+    color: grey;
+  }
+}
